@@ -1,0 +1,40 @@
+# Homework 3 - Dimension Reduction Using PCA
+
+This assignment applies Principal Component Analysis (PCA) to a customer dataset to reduce correlated variables into a smaller number of meaningful principal components while retaining most of the original information.
+
+## Objectives
+- Load and understand the customer dataset
+- Examine correlations among numerical variables
+- Standardize variables using scikit-learn
+- Perform Principal Component Analysis (PCA)
+- Determine how many principal components should be retained
+- Examine PCA loadings
+- Create PCA scores for each customer
+- Visualize PCA results
+- Interpret the principal components from a business perspective
+- Review and improve Copilot-generated code
+
+## Analysis Includes
+- Correlation matrix
+- Standardized customer features
+- Explained and cumulative variance
+- PCA loadings
+- PCA scores
+- Correlation heatmap
+- PCA scree plot
+- Cumulative variance plot
+- PC1 vs. PC2 scatterplot
+
+## Files
+- Python program for the PCA analysis
+- `correlation_matrix.csv`
+- `standardized_customer_features.csv`
+- `pca_explained_variance.csv`
+- `pca_loadings.csv`
+- `pca_scores.csv`
+- `correlation_heatmap.png`
+- `pca_scree_plot.png`
+- `pca_cumulative_variance.png`
+- `pca_scatterplot.png`
+- PCA analysis and business interpretation
+- Copilot code-review documentation
