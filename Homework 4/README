@@ -1,0 +1,47 @@
+# Homework 4 - Multiple Linear Regression with Scikit-learn
+
+This assignment uses multiple linear regression to predict monthly `Sales_Revenue` from five business predictors:
+
+- Advertising Spend
+- Website Visits
+- Discount Rate
+- Sales Staff Hours
+- Customer Count
+
+## Objectives
+- Load and inspect the business dataset
+- Generate descriptive statistics and check for missing values
+- Analyze correlations among the predictors and Sales Revenue
+- Split the data into 80% training and 20% testing sets
+- Build a multiple linear regression model using scikit-learn
+- Interpret the model intercept and regression coefficients
+- Generate predictions for the testing data
+- Calculate residuals
+- Evaluate model performance using:
+  - Mean Squared Error (MSE)
+  - Root Mean Squared Error (RMSE)
+  - R²
+- Compare training and testing performance
+- Create regression diagnostic visualizations
+- Generate Sales Revenue predictions for hypothetical business scenarios
+- Review and improve Copilot-generated code
+
+## Visualizations
+- Correlation heatmap
+- Advertising Spend vs. Sales Revenue scatterplot
+- Regression coefficient bar chart
+- Actual vs. Predicted Sales scatterplot
+- Residual plot
+
+## Files
+- Python program for the multiple regression analysis
+- `correlation_matrix.csv`
+- `regression_predictions.csv`
+- `regression_metrics.csv`
+- `business_predictions.csv`
+- `correlation_heatmap.png`
+- `advertising_sales_scatterplot.png`
+- `regression_coefficients.png`
+- `actual_vs_predicted.png`
+- `residual_plot.png`
+- Copilot code-review documentation
