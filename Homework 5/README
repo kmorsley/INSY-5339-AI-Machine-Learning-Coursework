@@ -1,0 +1,41 @@
+# Homework 5 - Gradient Descent and Learning Rate Comparison
+
+This assignment extends the regression work from Homework 4 by focusing on how gradient descent learns a simple linear regression model and how different learning rates affect convergence.
+
+The analysis uses:
+
+- `Advertising_Spend` as the predictor
+- `Sales_Revenue` as the target
+
+## Objectives
+- Load and prepare the Homework 4 business dataset
+- Use an 80/20 train-test split
+- Standardize Advertising Spend and Sales Revenue
+- Build a simple linear regression benchmark using scikit-learn
+- Calculate benchmark Test RMSE and Test R²
+- Implement gradient descent from scratch
+- Learn the regression slope and intercept through iterative updates
+- Compare three learning rates:
+  - 0.001
+  - 0.01
+  - 0.10
+- Compare final training cost, Test RMSE, Test R², slope, and intercept
+- Visualize learning-rate convergence
+- Compare gradient descent results with scikit-learn linear regression
+- Fit a Ridge Regression model as an introduction to regularization
+- Review and improve Copilot-generated code
+
+## Analysis Includes
+- Simple linear regression benchmark
+- Gradient descent implementation
+- Learning-rate comparison
+- Convergence curves
+- Model performance comparison
+- Ridge Regression demonstration
+
+## Files
+- Python program for gradient descent and model comparison
+- `learning_rate_comparison.csv`
+- `model_comparison.csv`
+- `learning_rate_convergence.png`
+- Copilot code-review documentation
