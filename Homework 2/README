@@ -1,0 +1,32 @@
+# Homework 2 - Data Preprocessing and Visualization
+
+This assignment focuses on preparing a real-world customer dataset for later data-mining and machine-learning analysis.
+
+## Objectives
+- Inspect and clean the raw customer dataset
+- Remove duplicate records
+- Correct inconsistent or invalid values
+- Handle missing values
+- Detect and document outliers
+- Standardize selected numerical variables using z-score scaling
+- Convert categorical variables using dummy/one-hot encoding
+- Summarize major preprocessing results
+- Create visualizations to explore the cleaned data
+- Review and improve Copilot-generated code for clarity and quality
+
+## Visualizations
+- Histogram of total customer spending over the last six months
+- Boxplot of annual income
+- Bar chart of customers by membership category
+- Scatter plot of annual income versus total spending
+
+## Files
+- Final cleaned customer dataset
+- Standardized numerical dataset
+- Encoded categorical dataset
+- Preprocessing summary CSV
+- Histogram image
+- Boxplot image
+- Bar chart image
+- Scatter plot image
+- Markdown documentation of Copilot code improvements
