@@ -1,6 +1,6 @@
 # Homework 6 – Logistic Regression with Scikit-learn
 
-This assignment applies logistic regression to a bank marketing dataset to predict whether an existing customer will accept a personal loan offer.
+This assignment applies logistic regression to a bank marketing dataset to predict whether an existing customer will accept a personal loan offer. 
 
 The project was completed using Python, scikit-learn, VS Code, and GitHub.
 
