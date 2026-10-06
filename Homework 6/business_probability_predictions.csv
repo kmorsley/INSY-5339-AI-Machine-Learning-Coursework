@@ -1,0 +1,4 @@
+New_Customer,Age,Annual_Income_K,Credit_Score,Account_Tenure_Years,Digital_Engagement_Score,Prior_Product_Count,Has_Mortgage,Offer_Channel,Predicted_Probability,Predicted_Class_0.50
+Customer_A,28,48.0,655,2.0,35,1,0,Email,0.034027020277648305,0
+Customer_B,42,92.0,720,8.0,67,3,1,Mobile,0.645104015485883,1
+Customer_C,55,145.0,775,18.0,88,5,1,Web,0.9755002801484538,1
