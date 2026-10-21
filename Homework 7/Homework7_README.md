@@ -2,7 +2,7 @@
 
 **Course:** INSY 5339 – AI and Machine Learning  
 **Assignment:** Homework 7 – Classification and Regression Trees with Scikit-learn  
-**Author:** Keishana Morsley
+**Author:** Keishana Morsley 
 
 ## Overview 
 
