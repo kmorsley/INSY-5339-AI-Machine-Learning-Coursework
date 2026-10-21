@@ -1,0 +1,54 @@
+Itemsets,Support
+Milk,0.422
+Bread,0.323
+"Bread, Milk",0.252
+Rice,0.239
+Coffee,0.2
+Creamer,0.199
+Eggs,0.199
+Chicken,0.196
+Pasta,0.193
+Apples,0.181
+Bananas,0.171
+Pasta_Sauce,0.168
+Yogurt,0.153
+Salsa,0.143
+Chips,0.14
+Butter,0.133
+"Coffee, Creamer",0.132
+Cereal,0.126
+"Pasta, Pasta_Sauce",0.117
+Baby_Wipes,0.11
+Diapers,0.101
+"Milk, Rice",0.09
+"Chips, Salsa",0.088
+"Milk, Pasta",0.087
+"Chicken, Rice",0.086
+"Eggs, Milk",0.085
+"Cereal, Milk",0.084
+"Coffee, Milk",0.083
+"Creamer, Milk",0.083
+"Milk, Pasta_Sauce",0.077
+"Bread, Rice",0.076
+"Chicken, Milk",0.075
+"Bananas, Milk",0.071
+"Apples, Milk",0.07
+"Bread, Coffee",0.068
+"Baby_Wipes, Diapers",0.065
+"Milk, Salsa",0.065
+"Milk, Yogurt",0.065
+"Bread, Creamer",0.062
+"Bread, Eggs",0.061
+"Chips, Milk",0.059
+"Bananas, Bread",0.058
+"Bread, Chicken",0.058
+"Bread, Milk, Rice",0.058
+"Coffee, Creamer, Milk",0.058
+"Bread, Pasta",0.056
+"Apples, Bread",0.055
+"Eggs, Rice",0.055
+"Milk, Pasta, Pasta_Sauce",0.055
+"Butter, Milk",0.054
+"Coffee, Rice",0.054
+"Bread, Coffee, Milk",0.054
+"Bread, Creamer, Milk",0.051

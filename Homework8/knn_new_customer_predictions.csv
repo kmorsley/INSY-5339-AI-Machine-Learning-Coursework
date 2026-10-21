@@ -1,0 +1,4 @@
+Scenario,Age,Annual_Income_K,Monthly_Spend,Digital_Engagement_Score,Account_Tenure_Years,Website_Visits_Month,Predicted_Class
+A,28,48,130,38,1.5,7,0
+B,41,92,310,78,8.0,18,1
+C,58,125,260,52,15.0,10,0

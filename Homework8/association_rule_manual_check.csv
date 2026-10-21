@@ -1,0 +1,2 @@
+Rule,Total_Transactions,Antecedent_Count,Consequent_Count,Joint_Count,Package_Support,Manual_Support,Package_Confidence,Manual_Confidence,Package_Lift,Manual_Lift
+Baby_Wipes -> Diapers,1000,110,101,65,0.065,0.065,0.5909090909090909,0.5909090909090909,5.8505850585058505,5.8505850585058505
