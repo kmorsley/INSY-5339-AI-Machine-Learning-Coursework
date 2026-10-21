@@ -1,0 +1,5 @@
+Max_Depth,Training_Accuracy,Testing_Accuracy,Nodes,Leaves
+3,0.792308,0.715385,15,8
+5,0.851923,0.730769,55,28
+7,0.942308,0.723077,127,64
+None (Fully Grown),1.000000,0.715385,187,94

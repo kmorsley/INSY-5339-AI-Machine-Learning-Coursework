@@ -1,0 +1,4 @@
+Scenario,Age,Annual_Income_K,Credit_Score,Family_Size,Education_Level,Account_Tenure_Years,Avg_Monthly_Card_Spend_K,Digital_Engagement_Score,Product_Count,Predicted_Loan_Accepted,Predicted_Annual_Bank_Revenue_K
+A,29,48,625,2,2,1.500000,1.100000,35,1,0,9.997059
+B,45,95,725,3,2,8.000000,3.200000,72,4,1,18.030571
+C,58,145,780,4,3,15.000000,5.500000,88,5,1,26.418333
