@@ -1,0 +1,4 @@
+Scenario,Age_Group,Income_Band,Employment_Status,Credit_Profile,Digital_Engagement,Prior_Product_Count_Band,Preferred_Channel,Recent_Campaign_Response,Predicted_Probability,Predicted_Class_0.50
+A,18-29,Low,Student,Fair,Low,0-1,Email,No,0.00534315,0
+B,30-44,Upper-Middle,Salaried,Good,High,2-3,Mobile,Yes,0.97432803,1
+C,45-59,High,Self-Employed,Excellent,High,4+,Web,Yes,0.98959994,1

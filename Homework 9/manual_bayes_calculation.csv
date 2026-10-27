@@ -1,0 +1,12 @@
+Class,Term,Matching_Training_Rows,Class_Training_Rows,Probability
+0,P(Credit_Profile=Good | Offer_Accepted=0),146,410,0.35609756
+0,P(Digital_Engagement=High | Offer_Accepted=0),102,410,0.24878049
+0,P(Recent_Campaign_Response=Yes | Offer_Accepted=0),70,410,0.17073171
+1,P(Credit_Profile=Good | Offer_Accepted=1),90,230,0.39130435
+1,P(Digital_Engagement=High | Offer_Accepted=1),99,230,0.43043478
+1,P(Recent_Campaign_Response=Yes | Offer_Accepted=1),122,230,0.53043478
+0,Prior P(Offer_Accepted=0),410,640,0.64062500
+0,Unnormalized NB score,,,0.00968954
+1,Prior P(Offer_Accepted=1),230,640,0.35937500
+1,Unnormalized NB score,,,0.03210716
+1,Normalized P(Offer_Accepted=1 | profile),,,0.76817443
