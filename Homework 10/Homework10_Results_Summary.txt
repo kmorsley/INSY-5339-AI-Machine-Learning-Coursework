@@ -1,0 +1,98 @@
+HOMEWORK 10: CUSTOMER SEGMENTATION
+
+PART 1: LOAD AND UNDERSTAND
+Customer_ID Region  Age  Annual_Income_K  Monthly_Spend  Digital_Engagement_Score  Store_Visits_Month  Loyalty_Years  Discount_Use_Pct  Campaign_Response_Pct
+   CUST0001  North   37             55.3          542.5                      59.7                  10            1.6              69.2                   60.8
+   CUST0002   East   36            100.6          684.4                      82.0                   6            3.4              15.6                   52.8
+   CUST0003  North   54            100.7          818.9                      93.1                   6            5.1              16.1                   66.9
+   CUST0004   East   33             82.2          446.5                      53.7                  11            3.3              67.4                   60.2
+   CUST0005  South   41             74.2          594.1                      38.7                   7           10.7              39.7                   37.5
+
+Rows: 600; columns: 10
+Columns and types:
+Customer_ID                  object
+Region                       object
+Age                           int64
+Annual_Income_K             float64
+Monthly_Spend               float64
+Digital_Engagement_Score    float64
+Store_Visits_Month            int64
+Loyalty_Years               float64
+Discount_Use_Pct            float64
+Campaign_Response_Pct       float64
+
+Missing values:
+Customer_ID                 0
+Region                      0
+Age                         0
+Annual_Income_K             0
+Monthly_Spend               0
+Digital_Engagement_Score    0
+Store_Visits_Month          0
+Loyalty_Years               0
+Discount_Use_Pct            0
+Campaign_Response_Pct       0
+
+Numeric descriptive statistics:
+              Age  Annual_Income_K  Monthly_Spend  Digital_Engagement_Score  Store_Visits_Month  Loyalty_Years  Discount_Use_Pct  Campaign_Response_Pct
+count  600.000000       600.000000     600.000000                600.000000          600.000000     600.000000        600.000000             600.000000
+mean    41.095000        74.478833     518.934333                 51.322167            7.110000       5.376000         39.749500              48.296667
+std     10.809597        30.259943     226.078412                 25.734348            4.168957       3.727015         21.077897              21.480069
+min     18.000000        25.000000      80.000000                  5.000000            0.000000       0.200000          0.000000               4.300000
+25%     33.000000        52.475000     328.425000                 28.600000            4.000000       2.500000         23.150000              29.700000
+50%     40.000000        67.500000     522.850000                 47.800000            6.000000       4.400000         35.950000              51.750000
+75%     49.000000        94.350000     676.275000                 74.250000           10.000000       7.525000         58.225000              64.100000
+max     74.000000       170.000000    1149.600000                100.000000           18.000000      20.000000         95.000000              94.800000
+
+Why unsupervised: No target variable or established customer segment labels are provided.
+
+PART 3: SCALING CHECK
+                                  mean  std_population
+Age                       1.184238e-16             1.0
+Annual_Income_K          -2.723747e-16             1.0
+Monthly_Spend             3.611926e-16             1.0
+Digital_Engagement_Score -5.995204e-17             1.0
+Store_Visits_Month       -7.697546e-17             1.0
+Loyalty_Years            -9.473903e-17             1.0
+Discount_Use_Pct         -2.190840e-16             1.0
+
+PART 4: EUCLIDEAN DISTANCES
+Raw: 159.931829
+Standardized: 3.321645
+Raw distance is affected by differing units and ranges; standardized distance gives each feature comparable scale.
+
+PART 5: HIERARCHICAL CLUSTERING
+Average linkage; Euclidean; n=60 sampled with random_state=42.
+Cut height: 3.093935; groups: 4. Lower dendrogram merges reflect greater similarity.
+
+PART 6: K SELECTION
+ k   Inertia  Silhouette_Score
+ 2 2804.7875            0.3506
+ 3 1919.4863            0.3872
+ 4 1169.2999            0.4750
+ 5 1080.7565            0.4044
+ 6 1019.2690            0.3396
+Highest silhouette among tested k: 4 (0.4750).
+The task specifies final k=4 for consistent comparison; elbow and profile interpretability were also examined.
+
+PARTS 7-8: FINAL K=4 AND ORIGINAL-UNIT PROFILES
+ Cluster  Customer_Count   Age  Annual_Income_K  Monthly_Spend  Digital_Engagement_Score  Store_Visits_Month  Loyalty_Years  Discount_Use_Pct  Campaign_Response_Pct
+       0             155 42.49            46.60         237.97                     24.89                3.06           2.15             41.26                  19.30
+       1             154 34.33            58.27         479.99                     62.24               11.37           3.73             67.89                  57.26
+       2             146 52.21            78.55         561.93                     33.98                9.38          10.45             31.00                  47.76
+       3             145 35.59           117.40         817.34                     85.44                4.63           5.45             17.06                  70.31
+
+INTERPRETATION OF THE FOUR SEGMENTS
+Cluster 0: Low-Engagement Light Spenders (n=155). Monthly spend $237.97; digital score 24.89; visits/month 3.06; loyalty years 2.15; discount use 41.26%; campaign response 19.30%.
+Cluster 1: Promotion-Responsive Frequent Shoppers (n=154). Monthly spend $479.99; digital score 62.24; visits/month 11.37; loyalty years 3.73; discount use 67.89%; campaign response 57.26%.
+Cluster 2: Established In-Store Loyalists (n=146). Monthly spend $561.93; digital score 33.98; visits/month 9.38; loyalty years 10.45; discount use 31.00%; campaign response 47.76%.
+Cluster 3: High-Value Digitally Engaged Customers (n=145). Monthly spend $817.34; digital score 85.44; visits/month 4.63; loyalty years 5.45; discount use 17.06%; campaign response 70.31%.
+Campaign response was assessed after fitting and never used as a clustering feature.
+
+PART 9: VISUALIZATION
+Income vs. spend is two-dimensional; the actual K-Means model uses all seven standardized variables.
+
+PART 10: METHOD COMPARISON
+Adjusted Rand Index (sample): 1.0000.
+ARI assesses agreement without assuming cluster numbers correspond. The sample-only hierarchical
+partition and full-data K-Means partition need not match exactly.
